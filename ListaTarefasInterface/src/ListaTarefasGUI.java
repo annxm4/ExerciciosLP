@@ -9,13 +9,13 @@ import java.io.*;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-public class ListaDeTarefasGUI {
+public class ListaTarefasGUI {
     private ArrayList<Tarefa> tarefas = new ArrayList<Tarefa>();
     private DefaultListModel<Tarefa> tarefasListModel = new DefaultListModel<>();
     private JList<Tarefa> tarefasList = new JList<>(tarefasListModel);
     private JTextField nomeTarefaField = new JTextField(20);
 
-    public ListaDeTarefasGUI() {
+    public ListaTarefasGUI() {
         JFrame frame = new JFrame("Aplicativo de Lista de Tarefas");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
@@ -108,6 +108,6 @@ public class ListaDeTarefasGUI {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new ListaDeTarefasGUI());
+        SwingUtilities.invokeLater(() -> new ListaTarefasGUI());
     }
 }
