@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ListaDeTarefas {
+public class ListaTarefas {
     public static void main(String[] args) {
         ArrayList<Tarefa> tarefas = new ArrayList<Tarefa>();
         Scanner scanner = new Scanner(System.in);
